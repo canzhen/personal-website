@@ -5,7 +5,7 @@ export const personalInfo = {
   subTagline: "Building scalable systems and improving developer experience.",
   copyright: `© ${new Date().getFullYear()} Canzhen Zhou. All rights reserved.`,
   social: {
-    github: "https://github.com/canzhenzhou",
+    github: "https://github.com/canzhen",
     linkedin: "https://www.linkedin.com/in/canzhenzhou",
   },
   about: {
