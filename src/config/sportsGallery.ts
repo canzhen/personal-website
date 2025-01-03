@@ -7,7 +7,7 @@ export const sportsGallery: HobbyMedia = {
     {
       type: 'video',
       url: `${CDN_URL}/boudering1.mov`,
-      mimeType: 'video/mp4', // Changed from quicktime
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
       poster: `${CDN_URL}/bouldering1.png`
     }
@@ -24,29 +24,29 @@ export const sportsGallery: HobbyMedia = {
   "brazilian jiu jitsu": [
     {
       type: 'image',
-      url: `${CDN_URL}/bjj1.jpg`, // Fixed case
+      url: `${CDN_URL}/bjj1.JPG`,
       aspectRatio: 'landscape'
     },
     {
       type: 'image',
-      url: `${CDN_URL}/bjj2.jpg`, // Fixed case
+      url: `${CDN_URL}/bjj2.jpeg`,
       aspectRatio: 'portrait'
     }
   ],
   cycling: [
     {
       type: 'video',
-      url: `${CDN_URL}/cycling1.mov`, // Fixed typo
+      url: `${CDN_URL}/cyling1.MOV`,
       mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/cycling1.jpg`
+      poster: `${CDN_URL}/cycling1.jpeg`
     },
     {
       type: 'video',
-      url: `${CDN_URL}/cycling2.mov`,
+      url: `${CDN_URL}/cycling2.MOV`,
       mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/cycling2.jpg`
+      poster: `${CDN_URL}/cycling1.jpeg`
     }
   ],
   singing: [
@@ -61,7 +61,7 @@ export const sportsGallery: HobbyMedia = {
   hiking: [
     {
       type: 'image',
-      url: `${CDN_URL}/hiking.jpg`, // Fixed case
+      url: `${CDN_URL}/hiking.jpeg`,
       aspectRatio: 'landscape'
     }
   ],
@@ -71,14 +71,14 @@ export const sportsGallery: HobbyMedia = {
       url: `${CDN_URL}/snowboarding1.mov`,
       mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/snowboarding1.jpg`
+      poster: `${CDN_URL}/snowboarding.jpeg`
     },
     {
       type: 'video',
       url: `${CDN_URL}/snowboarding2.mov`,
       mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/snowboarding2.jpg`
+      poster: `${CDN_URL}/snowboarding.jpeg`
     }
   ]
 };

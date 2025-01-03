@@ -10,6 +10,7 @@ interface MediaPlayerProps {
 
 export function MediaPlayer({ media, title, showControls = false }: MediaPlayerProps) {
   const [hasError, setHasError] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   if (!media || hasError) {
     return (
@@ -26,21 +27,28 @@ export function MediaPlayer({ media, title, showControls = false }: MediaPlayerP
     return (
       <div className="relative w-full h-full">
         <video
-          controls={showControls}
+          controls={showControls || isPlaying}
           className="w-full h-full object-cover"
           preload="metadata"
           playsInline
           poster={media.poster}
           onError={() => setHasError(true)}
+          onPlay={() => setIsPlaying(true)}
+          onPause={() => setIsPlaying(false)}
         >
-          <source 
-            src={media.url} 
-            type={media.mimeType}
-          />
+          <source src={media.url} type={media.mimeType} />
           Your browser does not support the video tag.
         </video>
-        {!showControls && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+        {!showControls && !isPlaying && (
+          <div 
+            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 cursor-pointer"
+            onClick={() => {
+              const video = document.querySelector('video');
+              if (video) {
+                video.play();
+              }
+            }}
+          >
             <Play className="w-12 h-12 text-white" />
           </div>
         )}
