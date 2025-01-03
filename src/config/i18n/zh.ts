@@ -25,15 +25,15 @@ export const zh = {
   },
   lifestyle: {
     title: "工作之外",
-    subtitle: "当我不在编程时，你会发现我在寻找冒险和保持活力"
+    subtitle: "当我不在编程时，我在做什么"
   },
   recaps: {
     title: "年度回顾",
-    subtitle: "通过年度视频回顾记录记忆和里程碑"
+    subtitle: "通过年度视频回顾记录生活里的大事件"
   },
   contact: {
     title: "联系方式",
-    subtitle: "我随时欢迎新的机会和合作",
+    subtitle: "欢迎新的合作和机会",
     form: {
       name: "姓名",
       email: "邮箱",
