@@ -8,24 +8,24 @@ interface SkillsProps {
 export function Skills({ t }: SkillsProps) {
   const skills = [
     {
+      category: "Backend",
+      icon: <Code2 className="w-6 h-6" />,
+      items: ["Golang", "Node.js", "Java Spring", "REST APIs"]
+    },
+    {
       category: "Frontend",
       icon: <Layout className="w-6 h-6" />,
       items: ["React", "TypeScript", "Tailwind CSS", "HTML5/CSS3"]
     },
     {
-      category: "Backend",
-      icon: <Code2 className="w-6 h-6" />,
-      items: ["Node.js", "Express", "REST APIs"]
-    },
-    {
       category: "Database",
       icon: <Database className="w-6 h-6" />,
-      items: ["PostgreSQL", "MongoDB", "Redis"]
+      items: ["PostgreSQL", "MySQL", "Redis"]
     },
     {
       category: "Tools",
       icon: <Terminal className="w-6 h-6" />,
-      items: ["Git", "Docker", "VS Code", "Linux"]
+      items: ["Terraform", "Kubernetes", "Docker", "Git", "VS Code", "Linux"]
     }
   ];
 
