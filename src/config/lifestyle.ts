@@ -41,7 +41,7 @@ export const lifestyleInfo = {
       name: "Skydiving Adventures",
       icon: "Plane",
       description: "Experienced the ultimate thrill of freefall twice",
-      image: "https://unsplash.com/photos/aerial-photography-of-three-people-skydiving-guDkXldTxy8?auto=format&fit=crop&w=800&h=500"
+      image: "https://images.unsplash.com/photo-1474623809196-26c1d33457cc?auto=format&fit=crop&w=800&h=500"
       
     },
     {

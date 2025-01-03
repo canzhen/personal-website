@@ -8,12 +8,12 @@ export const sportsGallery = {
     "https://images.unsplash.com/photo-1613918431703-aa50889e3be9?auto=format&fit=crop&w=800&h=600"
   ],
   snowboarding: [
-    "https://images.unsplash.com/photos/XO6FSH3H5CE?auto=format&fit=crop&w=800&h=600",
-    "https://images.unsplash.com/photo-1580059729669-9a7a442855a3?auto=format&fit=crop&w=800&h=600"
+    "https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?auto=format&fit=crop&w=800&h=600",
+    "https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?auto=format&fit=crop&w=800&h=600"
   ],
   "brazilian jiu jitsu": [
-    "https://images.unsplash.com/photos/-d2eGdbmYYU?auto=format&fit=crop&w=800&h=600",
-    "https://images.unsplash.com/photo-1577998474004-e76d31ddaef4?auto=format&fit=crop&w=800&h=600"
+    "https://images.unsplash.com/photo-1682545888368-587f56efd06e?auto=format&fit=crop&w=800&h=600",
+    "https://images.unsplash.com/photo-1682545888368-587f56efd06e?auto=format&fit=crop&w=800&h=600"
   ],
   singing: [
     "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&h=600",
