@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { MediaItem } from '../types/media';
 import { ImageOff, Play } from 'lucide-react';
 
@@ -9,12 +9,14 @@ interface MediaPlayerProps {
 }
 
 export function MediaPlayer({ media, title, showControls = false }: MediaPlayerProps) {
-  if (!media) {
+  const [hasError, setHasError] = useState(false);
+
+  if (!media || hasError) {
     return (
       <div className="w-full h-full flex items-center justify-center bg-gray-100">
         <div className="text-center text-gray-400">
           <ImageOff className="w-8 h-8 mx-auto mb-2" />
-          <p className="text-sm">No media available</p>
+          <p className="text-sm">Media not available</p>
         </div>
       </div>
     );
@@ -29,8 +31,12 @@ export function MediaPlayer({ media, title, showControls = false }: MediaPlayerP
           preload="metadata"
           playsInline
           poster={media.poster}
+          onError={() => setHasError(true)}
         >
-          <source src={media.url} type={media.mimeType} />
+          <source 
+            src={media.url} 
+            type={media.mimeType}
+          />
           Your browser does not support the video tag.
         </video>
         {!showControls && (
@@ -46,6 +52,7 @@ export function MediaPlayer({ media, title, showControls = false }: MediaPlayerP
     <img
       src={media.url}
       alt={title}
+      onError={() => setHasError(true)}
       className={`w-full h-full object-cover ${
         media.aspectRatio === 'portrait' ? 'object-top' : 'object-center'
       }`}

@@ -7,53 +7,53 @@ export const sportsGallery: HobbyMedia = {
     {
       type: 'video',
       url: `${CDN_URL}/boudering1.mov`,
-      mimeType: 'video/quicktime',
+      mimeType: 'video/mp4', // Changed from quicktime
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/bouldering1.png?auto=format&fit=crop&w=800&h=600`
+      poster: `${CDN_URL}/bouldering1.png`
     }
   ],
   badminton: [
     {
       type: 'video',
       url: `${CDN_URL}/badminton1.mov`,
-      mimeType: 'video/quicktime',
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/badminton1.jpg?auto=format&fit=crop&w=800&h=600`
+      poster: `${CDN_URL}/badminton1.jpg`
     }
   ],
   "brazilian jiu jitsu": [
     {
       type: 'image',
-      url: `${CDN_URL}/bjj1.JPG`,
+      url: `${CDN_URL}/bjj1.jpg`, // Fixed case
       aspectRatio: 'landscape'
     },
     {
       type: 'image',
-      url: `${CDN_URL}/bjj2.jpeg`,
+      url: `${CDN_URL}/bjj2.jpg`, // Fixed case
       aspectRatio: 'portrait'
     }
   ],
   cycling: [
     {
       type: 'video',
-      url: `${CDN_URL}/cyling1.MOV`,
-      mimeType: 'video/quicktime',
+      url: `${CDN_URL}/cycling1.mov`, // Fixed typo
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: `${CDN_URL}/cycling1.jpeg?auto=format&fit=crop&w=800&h=600`
+      poster: `${CDN_URL}/cycling1.jpg`
     },
     {
       type: 'video',
-      url: `${CDN_URL}/cycling2.MOV`,
-      mimeType: 'video/quicktime',
+      url: `${CDN_URL}/cycling2.mov`,
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&h=600'
+      poster: `${CDN_URL}/cycling2.jpg`
     }
   ],
   singing: [
     {
       type: 'video',
       url: `${CDN_URL}/singing.mov`,
-      mimeType: 'video/quicktime',
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
       poster: `${CDN_URL}/singing.png`
     }
@@ -61,7 +61,7 @@ export const sportsGallery: HobbyMedia = {
   hiking: [
     {
       type: 'image',
-      url: `${CDN_URL}/hiking.jpeg`,
+      url: `${CDN_URL}/hiking.jpg`, // Fixed case
       aspectRatio: 'landscape'
     }
   ],
@@ -69,16 +69,16 @@ export const sportsGallery: HobbyMedia = {
     {
       type: 'video',
       url: `${CDN_URL}/snowboarding1.mov`,
-      mimeType: 'video/quicktime',
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: 'https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?auto=format&fit=crop&w=800&h=600'
+      poster: `${CDN_URL}/snowboarding1.jpg`
     },
     {
       type: 'video',
       url: `${CDN_URL}/snowboarding2.mov`,
-      mimeType: 'video/quicktime',
+      mimeType: 'video/mp4',
       aspectRatio: 'landscape',
-      poster: 'https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?auto=format&fit=crop&w=800&h=600'
+      poster: `${CDN_URL}/snowboarding2.jpg`
     }
   ]
 };
