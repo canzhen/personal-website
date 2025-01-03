@@ -41,14 +41,14 @@ export const lifestyleInfo = {
       name: "Skydiving Adventures",
       icon: "Plane",
       description: "Experienced the ultimate thrill of freefall twice",
-      image: "https://images.unsplash.com/photo-1474623809196-26c1d33457cc?auto=format&fit=crop&w=800&h=500"
+      image: "https://pub-55805ded2e404a67ac0617e03517fec6.r2.dev/skydiving1.JPG?auto=format&fit=crop&w=800&h=500"
       
     },
     {
-      name: "Scuba Certification",
+      name: "Scuba Diving",
       icon: "Waves",
       description: "Certified diver exploring underwater worlds",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&h=500"
+      image: "https://pub-55805ded2e404a67ac0617e03517fec6.r2.dev/scubadiving1.PNG?auto=format&fit=crop&w=800&h=500"
     }
   ]
 };

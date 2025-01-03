@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { DynamicIcon } from './icons/DynamicIcon';
 import { HobbyDetail } from './HobbyDetail';
+import { MediaPlayer } from './MediaPlayer';
 import { sportsGallery } from '../config/sportsGallery';
+import { Play } from 'lucide-react';
+import type { MediaItem } from '../types/media';
 
 interface HobbyCardProps {
   hobby: {
@@ -13,7 +16,8 @@ interface HobbyCardProps {
 
 export function HobbyCard({ hobby }: HobbyCardProps) {
   const [showDetail, setShowDetail] = useState(false);
-  const images = (sportsGallery as any)[hobby.name.toLowerCase()];
+  const media = sportsGallery[hobby.name.toLowerCase()];
+  const previewMedia = media?.[0];
   
   return (
     <>
@@ -21,12 +25,15 @@ export function HobbyCard({ hobby }: HobbyCardProps) {
         className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:scale-105"
         onClick={() => setShowDetail(true)}
       >
-        <div className="aspect-w-16 aspect-h-9">
-          <img
-            src={images?.[0]}
-            alt={hobby.name}
-            className="w-full h-64 object-cover"
-          />
+        <div className="relative aspect-w-16 aspect-h-9 bg-gray-100">
+          <div className="relative w-full h-64">
+            <MediaPlayer media={previewMedia} title={hobby.name} />
+            {previewMedia?.type === 'video' && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                <Play className="w-12 h-12 text-white" />
+              </div>
+            )}
+          </div>
         </div>
         <div className="p-6">
           <div className="flex items-center mb-2">
